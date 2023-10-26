@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="assets/js/script.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Cardápio Digital</title>
+  <meta name="description"
+    content="Bem-vindo ao nosso cardápio digital. Aqui você encontrará nossa seleção de produtos deliciosos.">
+
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <button class="hamburger"></button>
+      <ul class="header-list">
+        <li><a href="#sobre" onclick="remove()">Início</a></li>
+        <li><a href="#menu" onclick="remove()">Menu</a></li>
+        <li><a href="#cadastro" onclick="remove()">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="sobre">
+      <h1>Cardápio Digital</h1>
+      <p>Bem-vindo ao nosso cardápio digital. Aqui você encontrará nossa seleção de produtos deliciosos.</p>
+      <h2>Sobre nos</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus at totam eius assumenda culpa? Vero aut
+        vitae magnam sapiente laudantium neque non, enim iusto aliquam, expedita nesciunt eligendi reiciendis nam.</p>
+    </section>
+
+    <section id="menu">
+      <table>
+        <tr class="tr-impar">
+          <td rowspan="2"><img class="img-cardapio" src="assets/img/camarão.jpeg"
+              alt="imagem de camarão assado no alho e óleo"></td>
+          <td class="titulo">CAMARÃO</td>
+          <td class="preco" rowspan="2">R$59,90</td>
+        </tr>
+        <tr class="tr-impar">
+          <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><img class="img-cardapio" src="assets/img/churrasco.jpeg"
+              alt="foto de uma peça de carne de churrasco por cima de uma tábua"></td>
+          <td class="titulo">CHURRASCO</td>
+          <td class="preco" rowspan="2">R$59,90</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
+        </tr>
+        <tr class="tr-impar">
+          <td rowspan="2"><img class="img-cardapio" src="assets/img/feijoada.jpeg"
+              alt="foto de um caldeirão com feijoada">
+          </td>
+          <td class="titulo">FEIJOADA</td>
+          <td class="preco" rowspan="2">R$59,90</td>
+        </tr>
+        <tr class="tr-impar">
+          <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><img class="img-cardapio" src="assets/img/parmegiana.jpeg"
+              alt="foto de um prato com macarrão e molho de tomate por cima, com queijo ralado"></td>
+          <td class="titulo">MACARRONADA</td>
+          <td class="preco" rowspan="2">R$59,90</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="cadastro">
+      <div class="formulario">
+        <h2 class="form-title">Formulário de Cadastro</h2>
+        <form method="post" action="https://6527464a917d673fd76d8a66.mockapi.io/cadastro">
+          <label for="nome">Nome:</label></br>
+          <input type="text" id="nome" name="nome" required> </br></br>
+
+          <label for="email">E-mail:</label></br>
+          <input type="email" id="email" name="email" required> </br></br>
+
+          <label for="telefone">Telefone:</label></br>
+          <input type="tel" id="telefone" name="telefone" required> </br></br>
+          <button class="botao-cadastro" type="submit">Cadastrar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="btn-top">
+    <i class="arrow up"></i>
+  </div>
+
+  <footer>
+    <nav>
+      <ul class="footer-list">
+        <li><a href="politica.html">Política de Privacidade</a></li>
+        <li><a href="termos.html">Termos de Serviço</a></li>
+        <li>Develvoped by <a href="https://github.com/HaralanS" target="_blank">Haralan</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+
+</html>
